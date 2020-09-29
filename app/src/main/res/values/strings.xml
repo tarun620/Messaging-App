@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bulbul</string>
+    <string name="type_mail">Type your e-mail</string>
+    <string name="type_password">Type your password</string>
+    <string name="button_login">Login</string>
+    <string name="not_has_account">Don\'t have an account? Register</string>
+    <string name="type_name">Enter your name</string>
+    <string name="button_register">Register</string>
+    <string name="green_heart_emoji">0x1F49A</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_group">GroupActivity</string>
+    <string name="title_activity_register_group">RegisterActivityGroup</string>
+</resources>

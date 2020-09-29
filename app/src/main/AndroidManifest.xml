@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.idene.whatsapp">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bulbul_transparent_3"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity">
+
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity
+            android:name=".activity.ConfigurationsActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.idene.whatsapp.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.GroupActivity"
+            android:label="@string/title_activity_group"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.idene.whatsapp.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivityGroup"
+            android:label="@string/title_activity_register_group"
+            android:parentActivityName=".activity.GroupActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.idene.whatsapp.activity.GroupActivity" />
+        </activity>
+    </application>
+
+</manifest>
